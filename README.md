@@ -57,17 +57,11 @@ Example cryptocurrencies used:
 
 ## Setup Instructions
 
-### 1. Clone the repository
-
-git clone https://github.com/yourusername/crypto-etl-pipeline.git
-
-cd crypto-etl-pipeline
-
-### 2. Install dependencies
+### 1. Install dependencies
 
 pip install -r requirements.txt
 
-### 3. Create PostgreSQL table
+### 2. Create PostgreSQL table
 
 Run this SQL command:
 
@@ -78,7 +72,7 @@ price_usd FLOAT,
 timestamp TIMESTAMP
 );
 
-### 4. Update database credentials
+### 3. Update database credentials
 
 Open **load.py** and update:
 
@@ -87,7 +81,7 @@ database
 user
 password
 
-### 5. Run the pipeline
+### 4. Run the pipeline
 
 python pipeline.py
 
